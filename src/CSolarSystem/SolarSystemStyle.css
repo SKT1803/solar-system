@@ -1,0 +1,147 @@
+body {
+    background-image: url(../assets/space2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: black; */
+    
+    
+}
+
+.system-all {
+    display: flex;
+    flex-direction: row;
+    /* margin: 50px; */
+    align-items: center;
+
+    position: relative;
+    left: 5%;
+}
+
+.solar-system {
+    width: 1200px;
+    height: 600px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.508);
+    border-radius: 10px; 
+    position: relative;
+    overflow: hidden;
+    margin-left: -70px; 
+    left: 100px;
+}
+
+.content {
+    /* zoom bot working 1.1. scale */
+    position: relative; /* Makes the sun's absolute positioning work relative to this container */
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Smooth zoom transitions */
+}
+
+.buttons {
+    /* position: absolute; Position the element absolutely within its closest positioned ancestor */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Align buttons to the left (instead of center) */
+    padding: 10px; /* Optional: Add some padding to avoid buttons being too close to the corner */
+    /* margin-left: -60px;  */
+}
+
+.buttons2 {
+    /* position: absolute; Position the element absolutely within its closest positioned ancestor */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Align buttons to the left (instead of center) */
+    padding: 10px; /* Optional: Add some padding to avoid buttons being too close to the corner */
+    /* margin: 40px; */
+}
+
+.button {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 0 0 5px white, 
+                0 0 10px white,
+                0 0 15px white;
+    background-color: rgba(0, 0, 0, 0.445);            
+}
+
+.first-layer {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.second-layer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin-left: -60px;
+}
+
+.info-button {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 60px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px white, 
+                0 0 10px white,
+                0 0 15px white;
+    background-color: rgba(0, 0, 0, 0.445); 
+}
+
+.button-others {
+    display: flex;
+    flex-direction: row;
+}
+
+.milkyway {
+    position: absolute;
+    width: 1500px;
+    height: auto;
+    top: -50%;
+    left: -50px;
+    transform: translate( -50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    animation: milkyWaySpin 5s linear infinite, fadeInMilkyWay 1.5s ease-in-out;
+}
+
+@media screen and (min-width: 1600px) {
+    .solar-system {
+        width: 1500px;
+        height: 750px;
+    }
+    
+}
+
+@keyframes milkyWaySpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fadeInMilkyWay {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

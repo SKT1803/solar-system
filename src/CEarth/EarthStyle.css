@@ -1,0 +1,70 @@
+
+.earth {
+    background-color: rgba(0, 0, 0, 0);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    overflow: visible;
+
+    animation: rotateEarth 7s linear infinite;
+    /* will-change: transform; */
+  }
+
+.orbit-earth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%; /* orbit-path, all circle or oval*/
+    /* will-change: transform; */
+    animation: orbitEarth 20s linear infinite; /* Orbit around the sun */
+
+}
+.orbit-line-earth {
+  border: 1px dashed rgba(255, 255, 255, 0.8);
+  padding: 266px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  will-change: transform;
+}
+
+img {
+    width: 100%; /* Fill the container's width */
+    height: 100%; /* Fill the container's height */
+    object-fit: cover; /* Prevent the image from being stretched or crushed */
+    border-radius: 50%; /* Make the image circular as well */
+}
+
+  @keyframes orbitEarth {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(250px); /* Start position */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(250px); /* Complete the orbit */
+    }
+}
+
+@keyframes rotateEarth {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* Full rotation */
+    }
+  }
+
+  .moon-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%; /* orbit-path, all circle or oval*/
+  }
+

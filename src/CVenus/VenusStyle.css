@@ -1,0 +1,63 @@
+.venus {
+    background-color: rgba(0, 0, 0, 0);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    animation: rotateVenus 3s linear infinite reverse;
+    /* will-change: transform; */
+  }
+
+.orbit-venus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%; /* orbit-path, all circle or oval*/
+    animation: orbitVenus 16s linear infinite; /* Orbit around the sun */
+}
+  
+.orbit-line-venus {
+  border: 1px dashed rgba(255, 255, 255, 0.8);
+  padding: 165px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  will-change: transform;
+}
+
+img {
+    width: 100%; /* Fill the container's width */
+    height: 100%; /* Fill the container's height */
+    object-fit: cover; /* Prevent the image from being stretched or crushed */
+    border-radius: 50%; /* Make the image circular as well */
+}
+
+  @keyframes orbitVenus {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(150px); /* Start position */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(150px); /* Complete the orbit */
+    }
+}
+
+@keyframes rotateVenus {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* Full rotation */
+    }
+  }
+
+
+ 

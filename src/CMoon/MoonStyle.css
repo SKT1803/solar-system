@@ -1,0 +1,57 @@
+.moon {
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: #F6F1D5;
+    box-shadow: 0 0 20px white, 
+                0 0 40px 5px white,
+                0 0 50px 10px white,
+                0 0 70px 20px white;
+    transform: translate(-50%, -50%);
+    overflow: hidden;  
+     /* animation: rotateMoon 1s linear infinite;  */
+  }
+
+.orbit-moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%; /* orbit-path, all circle or oval*/
+    animation: orbitMoon 28s linear infinite; /* Orbit around the sun */
+    /* will-change: transform; */
+}
+
+.orbit-line-moon {
+  border: 1px dashed rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  will-change: transform;
+}
+  
+  @keyframes orbitMoon {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(40px); /* Start position */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(40px); /* Complete the orbit */
+    }
+}
+
+@keyframes rotateMoon {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* Full rotation */
+    }
+  }
+

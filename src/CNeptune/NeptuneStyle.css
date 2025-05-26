@@ -1,0 +1,57 @@
+.neptune {
+  background-color: rgba(0, 0, 0, 0);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    animation: rotateNeptune 5s linear infinite;
+  }
+
+.orbit-neptune {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%; /* orbit-path, all circle or oval*/
+    animation: orbitNeptune 100s linear infinite; /* Orbit around the sun */
+}
+  
+.orbit-line-neptune {
+  border: 1px dashed rgba(255, 255, 255, 0.8);
+  padding: 1224px; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  will-change: transform; 
+}
+
+img {
+    width: 100%; /* Fill the container's width */
+    height: 100%; /* Fill the container's height */
+    object-fit: cover; /* Prevent the image from being stretched or crushed */
+    border-radius: 50%; /* Make the image circular as well */
+}
+
+  @keyframes orbitNeptune{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(1200px); /* Start position */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(1200px); /* Complete the orbit */
+    }
+}
+
+@keyframes rotateNeptune {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* Full rotation */
+    }
+  }
