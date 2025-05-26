@@ -74,6 +74,12 @@ body {
     background-color: rgba(0, 0, 0, 0.445);            
 }
 
+.button-selected {
+    border: 3px solid limegreen;
+    box-shadow: 0 0 10px limegreen, 
+                0 0 15px limegreen;
+}
+
 .first-layer {
     display: flex;
     flex-direction: row;

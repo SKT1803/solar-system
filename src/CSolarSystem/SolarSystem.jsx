@@ -93,17 +93,85 @@ function SolarSystem() {
         <div className='first-layer'>
              <div className='buttons'>
                       <button className='button' onClick={() => window.location.reload()}>Refresh</button>
+
+
+                    <button
+                    className={`button ${clickSun ? 'button-selected' : ''}`}
+                        onClick={() => setClickSun(prev => !prev)}
+                        >
+                        Sun
+                    </button>
+
+                    <button
+                    className={`button ${clickMercury ? 'button-selected' : ''}`}
+                        onClick={() => setClickMercury(prev => !prev)}
+                        >
+                        Mercury
+                    </button>
+
+                    <button
+                    className={`button ${clickVenus ? 'button-selected' : ''}`}
+                        onClick={() => setClickVenus(prev => !prev)}
+                        >
+                        Venus
+                    </button>
+
+                    <button
+                    className={`button ${clickEarthAndMoon ? 'button-selected' : ''}`}
+                        onClick={() => setClickEarth(prev => !prev)}
+                        >
+                        Earth
+                    </button>
+
+
+                       {/*
                       <button className='button' onClick={() => setClickSun(prev => !prev)}>Sun</button>
                       <button className='button' onClick={() => setClickMercury(prev => !prev)}>Mercury</button>
                       <button className='button' onClick={() => setClickVenus(prev => !prev)}>Venus</button>
-                      <button className='button' onClick={() => setClickEarth(prev => !prev)}>Earth</button>
+                      <button className='button' onClick={() => setClickEarth(prev => !prev)}>Earth</button> */}
              </div>
-             <div className='buttons2'>
-                      <button className='button' onClick={() => setClickMars(prev => !prev)}>Mars</button>
+            <div className='buttons2'>
+
+                <button
+                        className={`button ${clickMars ? 'button-selected' : ''}`}
+                        onClick={() => setClickMars(prev => !prev)}
+                        >
+                        Mars
+                    </button>
+
+                   <button
+                        className={`button ${clickJupiter ? 'button-selected' : ''}`}
+                        onClick={() => setClickJupiter(prev => !prev)}
+                        >
+                        Jupiter
+                     </button>
+
+                     <button
+                        className={`button ${clickSaturn ? 'button-selected' : ''}`}
+                        onClick={() => setClickSaturn(prev => !prev)}
+                        >
+                        Saturn
+                     </button>
+
+                     <button
+                        className={`button ${clickUranus ? 'button-selected' : ''}`}
+                        onClick={() => setClickUranus(prev => !prev)}
+                        >
+                        Uranus
+                     </button>
+
+                      <button
+                        className={`button ${clickNeptune ? 'button-selected' : ''}`}
+                        onClick={() => setClickNeptune(prev => !prev)}
+                        >
+                        Neptune
+                      </button>
+             
+                      {/* <button className='button' onClick={() => setClickMars(prev => !prev)}>Mars</button>
                       <button className='button' onClick={() => setClickJupiter(prev => !prev)}>Jupiter</button>
                       <button className='button' onClick={() => setClickSaturn(prev => !prev)}>Saturn</button>
                       <button className='button' onClick={() => setClickUranus(prev => !prev)}>Uranus</button>
-                      <button className='button' onClick={() => setClickNeptune(prev => !prev)}>Neptune</button>
+                      <button className='button' onClick={() => setClickNeptune(prev => !prev)}>Neptune</button> */}
             </div>
         </div>
      </div>
