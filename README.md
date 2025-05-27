@@ -64,10 +64,13 @@ git clone https://github.com/SKT1803/SolarSystem.git
 <br>
 <table>
   <tr>
-    <td><img src="screenshots/2.png" width="400"></td>
-    <td><img src="screenshots/3.png" width="400"></td>
+    <td><img src="screenshots/1.png" width="500"></td>
+    <td><img src="screenshots/2.png" width="500"></td>
   </tr>
-
+ <tr>
+    <td><img src="screenshots/3.png" width="500"></td>
+    <td><img src="screenshots/4.png" width="500"></td>
+  </tr>
 </table>
 
 
