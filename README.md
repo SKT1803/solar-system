@@ -45,6 +45,8 @@ SolarSystem
 
 ## Getting Started
 
+This project is built with **React**, styled using **CSS**, and bundled with **Vite** for blazing-fast development.
+
 ### Installation
 
 ```bash
@@ -55,5 +57,17 @@ git clone https://github.com/SKT1803/SolarSystem.git
  Run Locally
    npm run dev
 ```
+---
+
+## Overview
+
+<br>
+<table>
+  <tr>
+    <td><img src="screenshots/2.png" width="400"></td>
+    <td><img src="screenshots/3.png" width="400"></td>
+  </tr>
+
+</table>
 
 
