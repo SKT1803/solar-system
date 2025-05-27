@@ -3,7 +3,7 @@
 A dynamic, interactive model of our solar system built with **JavaScript**, **React**, and **CSS**. Explore the orbits, sizes, and rotation of the planets — all in a beautiful, user-friendly UI. Now live and deployed on **Vercel**!
 
 # Deployed On Vercel
-🌐 **Live Demo**: [Try it on Vercel](solar-system-mu-kohl.vercel.app)
+🌐 **Live Demo**: [Try it on Vercel](https://solar-system-mu-kohl.vercel.app)
 
 
 ---
