@@ -1,3 +1,9 @@
+<div align="center" id="solar-system">
+
+<img src="screenshots/logo.png" width="125px">
+
+</div>
+
 # Solar System Model
 
 A dynamic, interactive model of our solar system built with **JavaScript**, **React**, and **CSS**. Explore the orbits, sizes, and rotation of the planets — all in a beautiful, user-friendly UI. Now live and deployed on **Vercel**!
